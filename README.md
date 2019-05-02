@@ -1,12 +1,9 @@
 <h1 align="center">
   <br><a href="https://imgbb.com/"><img src="https://i.ibb.co/kXD9vbw/Tech-IT-Not-official.png" alt="Tech-IT-Not-official" border="0"></a></a>
   <br>
-  Markdownify
+  <p align="center"><a href="https://ibb.co/nrNNrwW"><img src="https://i.ibb.co/PxvvxrS/ff2b00.png" alt="ff2b00" border="0"></a></p>
   <br>
 </h1>
-<p align="center"><a href="https://ibb.co/nrNNrwW"><img src="https://i.ibb.co/PxvvxrS/ff2b00.png" alt="ff2b00" border="0"></a></p>
-<h4 align="center">Not Official Logo</h4>
-
 
 # Tech IT
 
@@ -27,15 +24,15 @@ This is a electronics e-commerce site. The site host various products the deal w
 
 
 ## Key Feautures
-- [] Fetch From a JSON File 
-- [] Display Products Dynamically
-- [] Page pagination  
-- [] Filter Products Based on Company or category
-- [] Add to cart
-- [] Search Product
-- [] Store Cart Locally 
-- [] Connect To back Api
-- [] Create User Login
+- [ ] Fetch From a JSON File 
+- [ ] Display Products Dynamically
+- [ ] Page pagination  
+- [ ] Filter Products Based on Company or category
+- [ ] Add to cart
+- [ ] Search Product
+- [ ] Store Cart Locally 
+- [ ] Connect To back Api
+- [ ] Create User Login
 
 
 ## Example 
@@ -64,7 +61,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+MIT (c) 2018 [Ian Odhiambo](https://github.com/ianodad)
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
