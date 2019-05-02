@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import Products from './Components/Product/Products';
+import MainMenu from './Components/Menu/MainMenu';
+import React from 'react';
 
-class App extends Component {
-      
-    
+const App = () => {
+	return (
+		<main className="container">
+			<MainMenu />
 
-  render() {
-    return (
-      <div>
-        try this..
-      </div>
-    )
-  }
-}
+			<Products />
+		</main>
+	);
+};
 
-export default App
+export default App;

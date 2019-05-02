@@ -1,0 +1,80 @@
+.input-group {
+    width: auto;
+}
+
+.brand-wrap .logo,
+.navbar-brand .logo {
+    margin-right: 7px;
+    max-height: 42px;
+    display: inline-block;
+}
+
+.brand-wrap .logo-text,
+.navbar-brand .logo-text {
+    margin: 0;
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.icontext {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header-main {
+    position: relative;
+}
+
+.widget-header .notify {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+}
+
+.notify {
+    position: absolute;
+    top: -4px;
+    right: -10px;
+    display: inline-block;
+    padding: .25em .6em;
+    font-size: 75%;
+    line-height: 1;
+    text-align: center;
+    border-radius: 3rem;
+    color: #fff;
+    background-color: #dc3545;
+}
+
+@media all and (max-width: 768px) {
+
+    .section-header .logo,
+    .header-main .logo {
+        max-height: 30px;
+        width: auto;
+    }
+
+    .section-header .logo-text,
+    .header-main .logo-text {
+        font-size: 24px;
+    }
+
+    .section-header .brand-wrap,
+    .section-header .search-wrap,
+    .section-header .widget-header,
+    .header-main .brand-wrap,
+    .header-main .search-wrap,
+    .header-main .widget-header {
+        margin-bottom: 1rem;
+    }
+
+}

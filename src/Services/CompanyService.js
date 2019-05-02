@@ -33,8 +33,7 @@ export const companies = [
   },
   {
     "iso": "5cc98af4808bf421ddeecc4c",
-    "company_name": "Nvidia
-"
+    "company_name": "Nvidia"
   },
 	{
     "iso": "5cc98af4808gf521ddeeec4c",
@@ -59,5 +58,5 @@ export const companies = [
 ];
 
 export function getCompanies() {
-  return genres.filter(company => company);
+  return companies.filter(company => company);
 }

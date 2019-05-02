@@ -38,6 +38,7 @@ export const categories =[
   {
     "_id": "5cc986dt1d8c252cb9b5es77",
     "category": "Desktop"
+  }
 ];
 
 export function getCategories() {

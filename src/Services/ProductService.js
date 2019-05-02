@@ -1,5 +1,5 @@
 import * as companiesAPI from "./CompanyService";
-import * as categoriesAPI from "./CategoriesService";
+import * as categoriesAPI from "./CategoryService";
 
 
 
@@ -551,7 +551,7 @@ const products = [
     "image": "http://placehold.it/250x250",
     "imageLg": "http://placehold.it/1080x1080",
     "productName": "AMD Radeon RX Vega 56",
-    "price": 30000
+    "price": 30000,
     "company": "AMD",
     "category": "Monitor",
     "quantity": 25,
