@@ -5,7 +5,7 @@ const ProductDetails = (props) => {
 	return (
 		<div className="ui cards d-flex flex-wrap ">
 			{products.map((product) => (
-				<div className="card">
+				<div className="card" key={product._id}>
 					<div className="image">
 						<img src={product.image} />
 					</div>
