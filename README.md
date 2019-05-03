@@ -24,10 +24,10 @@ This is a electronics e-commerce site. The site host various products the deal w
 
 
 ## Key Feautures
-- [ ] Fetch From a JSON File 
-- [ ] Display Products Dynamically
-- [ ] Page pagination  
-- [ ] Filter Products Based on Company or category
+- [x] Fetch From a JSON File 
+- [x] Display Products Dynamically
+- [x] Page pagination  
+- [x] Filter Products Based on Company or category
 - [ ] Add to cart
 - [ ] Search Product
 - [ ] Store Cart Locally 
@@ -38,11 +38,57 @@ This is a electronics e-commerce site. The site host various products the deal w
 ## Example 
 
 ## Modules
+Most modules are imported into react from the index.js file
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+```
+css module used are bootstrap 4 and font-awesome  
+```js
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
+```
 
-## Events 
+Semantic-ui is a css framework
+```
+npm install sematic-ui-react sematic-ui-css --save
+```
+
+lodash
+
+```
+npm i --save lodash
+```
+
+```js
+import _ from 'lodash';
+
+```
+## Events
+the handlePageChange() takes in one parameter then setState's it to this.state.currentPage
+```js
+this.handlePageChange(page)
+```
+
+The handleCategoryChange() method takes in one parameter then setState the category to this.state.selectedCategory
+```js
+this.handleCategoryChange(category)
+```
+
+
 
 ## State
 
+Main state is found in the product.jsx
+```js
+state = {
+		products: [],
+		pageSize: 4,
+		currentPage: 1,
+		categories: [],
+		selectedCategory: ''
+	};
+```
 
 ## Installation
 
