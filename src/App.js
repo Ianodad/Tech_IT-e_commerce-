@@ -4,7 +4,7 @@ import React from 'react';
 
 const App = () => {
 	return (
-		<main className="container">
+		<main className="container-fluid">
 			<MainMenu />
 
 			<Products />

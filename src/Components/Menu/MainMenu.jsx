@@ -8,7 +8,7 @@ const MainMenu = () => {
 				<div className="d-flex row align-items-center ">
 					<div className="col-lg-5-24 col-sm-5 col-4 col-md-2">
 						<div className="brand-wrap">
-							<img className="logo" src="images/logo-dark.png" />
+							<img className="logo" src="images/logo-dark.png" alt='logo' />
 							<h2 className="logo-text">LOGO</h2>
 						</div>
 					</div>
@@ -41,7 +41,6 @@ const MainMenu = () => {
 							<div className="widget-header">
 								<small className="title text-muted">Welcome guest!</small>
 								<div>
-									{' '}
 									<a href="#">Sign in</a> <span className="dark-transp"> | </span>
 									<a href="#"> Register</a>
 								</div>
