@@ -1,6 +1,7 @@
 import React from 'react';
 import '../StylesCommon/responsive.css';
 import '../StylesCommon/ui.css';
+import { Link } from 'react-router-dom';
 
 const MainMenu = () => {
 	return (
@@ -72,19 +73,19 @@ const MainMenu = () => {
 						</ul>
 						<ul className="navbar-nav">
 							<li>
-								<a href="#" className="nav-link">
+								<Link href="/account" className="nav-link">
 									My Account
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="nav-link">
+								<Link href="/wishlist" className="nav-link">
 									Wishlist
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="nav-link">
+								<Link href="/chart" className="nav-link">
 									Checkout
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -94,10 +95,12 @@ const MainMenu = () => {
 				<div className="container-fluid">
 					<div className="row align-items-center">
 						<div className="col-md-2 col-sm-6">
-							<div className="brand-wrap">
-								<img className="logo" src="images/logo-dark.png" />
-								<h2 className="logo-text">LOGO</h2>
-							</div>
+							<Link to="/">
+								<div className="brand-wrap">
+									<img className="logo" src="images/logo-dark.png" />
+									<h2 className="logo-text">LOGO</h2>
+								</div>
+							</Link>
 						</div>
 						<div className="col-md-6 col-sm-6">
 							<form action="#">
@@ -127,14 +130,16 @@ const MainMenu = () => {
 								<div className="widget-header">
 									<small className="title text-muted">Welcome guest!</small>
 									<div>
-										<a href="#">Sign in</a> <span className="dark-transp"> | </span>
-										<a href="#"> Register</a>
+										<Link to="/login">Sign in</Link> <span className="dark-transp"> | </span>
+										<Link href="register"> Register</Link>
 									</div>
 								</div>
 								<a href="#" className="widget-header border-left pl-3 ml-3">
 									<div className="icontext">
 										<div className="icon-wrap icon-sm round border">
-											<i className="fa fa-shopping-cart" />
+											<Link to="/cart">
+												<i className="fa fa-shopping-cart" />
+											</Link>
 										</div>
 									</div>
 									<span className="badge badge-pill badge-danger notify">0</span>

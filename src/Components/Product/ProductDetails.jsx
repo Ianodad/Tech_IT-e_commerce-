@@ -1,5 +1,6 @@
 import React from 'react';
 import Currency from 'react-currency-formatter';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = (props) => {
 	const { products } = props;
@@ -11,9 +12,9 @@ const ProductDetails = (props) => {
 						<img src={product.image} alt={product.description} />
 					</div>
 					<div className="content">
-						<a href="#" className="header">
+						<Link to={`/products/${product._id}`} className="header">
 							{product.productName}
-						</a>
+						</Link>
 
 						<div className="meta">
 							<span className="date">
@@ -25,7 +26,7 @@ const ProductDetails = (props) => {
 					<div className="extra content">
 						<div className="header">
 							<p>
-								<Currency quantity={product.price} currency="KES"/>
+								<Currency quantity={product.price} currency="KES" />
 							</p>
 						</div>
 					</div>

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '../StylesCommon/responsive.css';
+import '../StylesCommon/ui.css';
 
 class Home extends Component {
 	render() {
