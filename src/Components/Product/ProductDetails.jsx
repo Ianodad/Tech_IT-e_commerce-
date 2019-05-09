@@ -1,4 +1,5 @@
 import React from 'react';
+import Currency from 'react-currency-formatter';
 
 const ProductDetails = (props) => {
 	const { products } = props;
@@ -23,7 +24,9 @@ const ProductDetails = (props) => {
 					</div>
 					<div className="extra content">
 						<div className="header">
-							<p>Ksh {product.price}</p>
+							<p>
+								<Currency quantity={product.price} currency="KES"/>
+							</p>
 						</div>
 					</div>
 				</div>
