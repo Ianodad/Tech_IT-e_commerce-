@@ -34,7 +34,7 @@ function ProductsView(props) {
 					</aside>
 					<aside className="col-sm-7">
 						<article className="p-5">
-							<h3 className="title mb-3"> product id {props.match.params.id}</h3>
+							<h3 className="title mb-3"> product id -{props.match.params._id}</h3>
 							<div className="mb-3">
 								<var className="price h3 text-warning">
 									<span className="currency">US $</span>
@@ -45,11 +45,7 @@ function ProductsView(props) {
 							<dl>
 								<dt>Description</dt>
 								<dd>
-									<p>
-										Here goes description consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco
-									</p>
+									<p>s{props.match.params.description}</p>
 								</dd>
 							</dl>
 							<dl className="row">
