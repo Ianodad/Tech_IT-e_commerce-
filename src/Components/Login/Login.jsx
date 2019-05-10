@@ -3,14 +3,28 @@ import Input from './Input';
 
 class Login extends Component {
 	state = {
-		account: { username: '', password: '' }
+		account: { username: '', password: '' },
+		errors: {}
 	};
 
+	validate = () => {
+		const errors = {};
+
+		const { account } = this.state;
+		// check if field is empty post errors
+		if (account.username.trim() === '') errors.username = 'Username is required.';
+		if (account.password.trim() === '') errors.password = 'Password is required.';
+
+		// return keys values for the error object conditionally
+		return Object.keys(errors).length === 0 ? null : errors;
+	};
 	handleSubmit = (e) => {
 		e.preventDefault();
 
-		console.log('Submitted');
-		console.log(this.state.account);
+		const errors = this.validate();
+
+		// console.log('Submitted');
+		console.log(errors);
 	};
 
 	handleChange = ({ currentTarget: input }) => {
