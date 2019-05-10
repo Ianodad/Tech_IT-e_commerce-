@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Input from './Input';
 
 class Login extends Component {
 	state = {
@@ -12,7 +13,7 @@ class Login extends Component {
 		console.log(this.state.account);
 	};
 
-	handleChange = (currentTarget: input) => {
+	handleChange = ({ currentTarget: input }) => {
 		const account = { ...this.state.account };
 		account[input.name] = input.value;
 		this.setState({ account });
@@ -28,32 +29,21 @@ class Login extends Component {
 						</h2>
 						<form onSubmit={this.handleSubmit} className="ui large form">
 							<div className="ui stacked secondary  segment">
-								<div className="form-group field">
-									<div className="ui left icon input">
-										<i className="user icon" />
-										<input
-											value={account.username}
-											onChange={this.handleChange}
-											id="username"
-											type="text"
-											name="username"
-											placeholder="Username"
-										/>
-									</div>
-								</div>
-								<div className="form-group field">
-									<div className="ui left icon input">
-										<i className="lock icon" />
-										<input
-											value={account.password}
-											onChange={this.handleChange}
-											id="password"
-											type="password"
-											name="password"
-											placeholder="Password"
-										/>
-									</div>
-								</div>
+								<Input
+									name="username"
+									value={account.username}
+									label="Username"
+									onChange={this.handleChange}
+									type="text"
+								/>
+								<Input
+									name="password"
+									value={account.password}
+									label="Password"
+									onChange={this.handleChange}
+									type="password"
+								/>
+
 								<button className="ui fluid large teal submit button">Login</button>
 							</div>
 							<div className="ui error message" />
