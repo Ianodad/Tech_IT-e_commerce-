@@ -22,9 +22,11 @@ class Login extends Component {
 		e.preventDefault();
 
 		const errors = this.validate();
-
-		// console.log('Submitted');
 		console.log(errors);
+		this.setState({ errors: errors || {} });
+		if (errors) return;
+
+		console.log('Submitted');
 	};
 
 	handleChange = ({ currentTarget: input }) => {
@@ -33,7 +35,7 @@ class Login extends Component {
 		this.setState({ account });
 	};
 	render() {
-		const { account } = this.state;
+		const { account, errors } = this.state;
 		return (
 			<div className="container">
 				<div className="ui middle aligned center aligned grid w-50 mx-auto">
@@ -49,6 +51,7 @@ class Login extends Component {
 									label="Username"
 									onChange={this.handleChange}
 									type="text"
+									error={errors.username}
 								/>
 								<Input
 									name="password"
@@ -56,12 +59,18 @@ class Login extends Component {
 									label="Password"
 									onChange={this.handleChange}
 									type="password"
+									error={errors.password}
 								/>
 
 								<button className="ui fluid large teal submit button">Login</button>
 							</div>
-							<div className="ui error message" />
 						</form>
+
+						{errors.username && <div className="ui error message">{errors.username}</div>}
+						{errors.password && <div className="ui error message">{errors.password}</div>}
+
+
+
 						<div className="ui message">
 							New to us? <a href="#">Register</a>
 						</div>
