@@ -28,8 +28,22 @@ class Login extends Component {
 
 		console.log('Submitted');
 	};
+	validateProperty = ({ name, value }) => {
+		if (name === 'username') {
+			if (value.trim() === '') return "Username is required";
+		}
+		if (name === 'password') {
+			if (value.trim() === '') return "Password is required";
+		}
+	};
 
 	handleChange = ({ currentTarget: input }) => {
+		const errors = { ...this.state.errors };
+		const errorMessage = this.validateProperty(input);
+		//  checks conditions of  errorMessage change the errors object according to condition
+		if (errorMessage) errors[input.name] = errorMessage;
+		else delete errors[input.name];
+
 		const account = { ...this.state.account };
 		account[input.name] = input.value;
 		this.setState({ account });
@@ -66,10 +80,8 @@ class Login extends Component {
 							</div>
 						</form>
 
-						{errors.username && <div className="ui error message">{errors.username}</div>}
-						{errors.password && <div className="ui error message">{errors.password}</div>}
-
-
+						{/* {errors.username && <div className="ui error message">{errors.username}</div>}
+						{errors.password && <div className="ui error message">{errors.password}</div>} */}
 
 						<div className="ui message">
 							New to us? <a href="#">Register</a>

@@ -6,8 +6,8 @@ const Input = ({ name, label, value, onChange, type, error }) => {
 			<div className={(name === 'username' ? 'user' : 'lock') + ' user ui left icon input'}>
 				<i className={(name === 'username' ? 'user' : 'lock') + ' icon'} />
 				<input value={value} onChange={onChange} id={name} type={type} name={name} placeholder={label} />
-				{/* {error && <div className="ui error message">{error}</div>} */}
 			</div>
+            {error && <div className="alert alert-danger">{error}</div>}                
 		</div>
 	);
 };
