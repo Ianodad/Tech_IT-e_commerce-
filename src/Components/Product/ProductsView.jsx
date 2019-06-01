@@ -21,9 +21,6 @@ class ProductsView extends Component {
 	}
 
 	render() {
-		{
-			console.log(this.state.product);
-		}
 		const { imageLG, productName, price, description, index } = this.state.product;
 		return (
 			<div className="container">

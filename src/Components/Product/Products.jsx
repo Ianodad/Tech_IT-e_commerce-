@@ -9,6 +9,7 @@ import ProductDetails from './ProductDetails';
 import Pagination from '../Pagination';
 import { paginate } from '../Util/Paginate';
 import CategoryList from '../Lists/CategoryList';
+import ProductsChart from './ProductsChart';
 
 class Products extends Component {
 	state = {
@@ -16,12 +17,14 @@ class Products extends Component {
 		pageSize: 4,
 		currentPage: 1,
 		categories: [],
-		selectedCategory: ''
+		selectedCategory: '',
+		chart: []
 	};
 
 	componentDidMount() {
 		const categories = [ { category: 'All Categories' }, ...getCategories() ];
 		this.setState({ products: getProducts(), categories });
+		console.log(this.props.location.pathname);
 	}
 	handlePageChange = (page) => {
 		this.setState({ currentPage: page });
@@ -30,9 +33,10 @@ class Products extends Component {
 	handleCategoryChange = (category) => {
 		this.setState({ selectedCategory: category, currentPage: 1 });
 	};
+	handleChartAdd() {}
 	render() {
 		const { length: count } = this.state.products;
-		const { products: allProducts, pageSize, currentPage, categories, selectedCategory } = this.state;
+		const { products: allProducts, pageSize, currentPage, categories, selectedCategory, chart } = this.state;
 
 		const filteredProducts =
 			selectedCategory && selectedCategory._id
@@ -44,29 +48,33 @@ class Products extends Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="row">
-					<div className="col-md-2" />
-					<div className="col-md-2">
-						<CategoryList
-							categories={categories}
-							products={allProducts}
-							onProductSelect={this.handleCategoryChange}
-							selectedCategory={this.state.selectedCategory}
-						/>
+				{this.props.location.pathname === '/chart' ? (
+					<ProductsChart chart={chart} onChartAdd={this.handleChartAdd} />
+				) : (
+					<div className="row">
+						<div className="col-md-2" />
+						<div className="col-md-2">
+							<CategoryList
+								categories={categories}
+								products={allProducts}
+								onProductSelect={this.handleCategoryChange}
+								selectedCategory={this.state.selectedCategory}
+							/>
+						</div>
+						<div className="col-md-6 col-sm-3">
+							<p>Showing {filteredProducts.length} products in the database</p>
+							<ProductDetails products={products} />
+							<Pagination
+								className="my-4"
+								productsCount={filteredProducts.length}
+								pageSize={pageSize}
+								currentPage={currentPage}
+								onPageChange={this.handlePageChange}
+							/>
+						</div>
+						<div className="col-md-2" />
 					</div>
-					<div className="col-md-6 col-sm-3">
-						<p>Showing {filteredProducts.length} products in the database</p>
-						<ProductDetails products={products} />
-						<Pagination
-							className="my-4"
-							productsCount={filteredProducts.length}
-							pageSize={pageSize}
-							currentPage={currentPage}
-							onPageChange={this.handlePageChange}
-						/>
-					</div>
-					<div className="col-md-2" />
-				</div>
+				)}
 			</div>
 		);
 	}
