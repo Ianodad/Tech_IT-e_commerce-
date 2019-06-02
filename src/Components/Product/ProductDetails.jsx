@@ -1,7 +1,6 @@
 import React from 'react';
 import Currency from 'react-currency-formatter';
 import { Route, Link } from 'react-router-dom';
-import ProductsView from './ProductsView';
 
 const ProductDetails = (props) => {
 	const { products } = props;
@@ -33,7 +32,6 @@ const ProductDetails = (props) => {
 					</div>
 				</div>
 			))}
-			{/* <Route path="/products/:_id" render={(props) => <ProductsView sortBy="newest" {...props} />} /> */}
 		</div>
 	);
 };

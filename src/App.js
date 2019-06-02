@@ -3,7 +3,7 @@ import MainMenu from './Components/Menu/MainMenu';
 import React from 'react';
 import Home from './Components/Home/Home';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import ProductsView from './Components/Product/ProductsView';
+import ProductView from './Components/Product/ProductView';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 
@@ -13,8 +13,8 @@ const App = () => {
 			<MainMenu />
 			<div className="content">
 				<Switch>
-					<Route path="/products/:_id" component={ProductsView} />
-					<Route path="/products" render={(props) => <Products sortBy="newest" {...props} />} />
+					<Route path="/products/:_id" component={ProductView} />
+					<Route path="/products" exact render={(props) => <Products sortBy="newest" {...props} />} />
 					<Route path="/cart" component={Products} />
 					<Route path="/not-found" component={NotFound} />
 					<Route path="/login" component={Login} />

@@ -9,7 +9,7 @@ import ProductDetails from './ProductDetails';
 import Pagination from '../Pagination';
 import { paginate } from '../Util/Paginate';
 import CategoryList from '../Lists/CategoryList';
-import ProductsChart from './ProductsChart';
+import ProductsCart from './ProductsCart';
 
 class Products extends Component {
 	state = {
@@ -33,7 +33,7 @@ class Products extends Component {
 	handleCategoryChange = (category) => {
 		this.setState({ selectedCategory: category, currentPage: 1 });
 	};
-	handleChartAdd() {}
+	handleChartAdd = (product) => {};
 	render() {
 		const { length: count } = this.state.products;
 		const { products: allProducts, pageSize, currentPage, categories, selectedCategory, chart } = this.state;
@@ -49,7 +49,7 @@ class Products extends Component {
 		return (
 			<div className="container-fluid">
 				{this.props.location.pathname === '/cart' ? (
-					<ProductsChart chart={chart} onChartAdd={this.handleChartAdd} />
+					<ProductsCart onChartAdd={this.handleChartAdd} />
 				) : (
 					<div className="row">
 						<div className="col-md-2" />
@@ -63,7 +63,7 @@ class Products extends Component {
 						</div>
 						<div className="col-md-6 col-sm-3">
 							<p>Showing {filteredProducts.length} products in the database</p>
-							<ProductDetails products={products} />
+							<ProductDetails products={products} onChartAdd={this.handleChartAdd} />
 							<Pagination
 								className="my-4"
 								productsCount={filteredProducts.length}

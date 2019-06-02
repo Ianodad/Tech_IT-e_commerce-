@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import '../StylesCommon/responsive.css';
 import '../StylesCommon/ui.css';
 import { getProduct } from '/home/renegade/Documents/My Projects/React/tech_it/src/Services/ProductService.js';
+import ProductsCart from './ProductsCart';
 
 class ProductsView extends Component {
 	state = {
-		product: {}
+		product: {},
+		cart: []
 	};
 
 	componentDidMount() {
@@ -21,7 +23,7 @@ class ProductsView extends Component {
 	}
 
 	render() {
-		const { imageLG, productName, price, description, index } = this.state.product;
+		const { imageLg, productName, price, description, quantity } = this.state.product;
 		return (
 			<div className="container">
 				<div className="card">
@@ -31,22 +33,22 @@ class ProductsView extends Component {
 								<div className="img-big-wrap">
 									<div>
 										<a href="images/items/1.jpg" data-fancybox>
-											<img src={imageLG} />
+											<img src={imageLg} />
 										</a>
 									</div>
 								</div>
 								<div className="img-small-wrap">
 									<div className="item-gallery">
-										<img src="images/items/1.jpg" />
+										<img src="http://placehold.it/70x70" />
 									</div>
 									<div className="item-gallery">
-										<img src="images/items/2.jpg" />
+										<img src="http://placehold.it/70x70" />
 									</div>
 									<div className="item-gallery">
-										<img src="images/items/3.jpg" />
+										<img src="http://placehold.it/70x70" />
 									</div>
 									<div className="item-gallery">
-										<img src="images/items/4.jpg" />
+										<img src="http://placehold.it/70x70" />
 									</div>
 								</div>
 							</article>
@@ -56,8 +58,8 @@ class ProductsView extends Component {
 								<h3 className="title mb-3">{productName}</h3>
 								<div className="mb-3">
 									<var className="price h3 text-warning">
-										<span className="currency">KSh</span>
-										<span className="num">price</span>
+										<span className="currency">KSh </span>
+										<span className="num">{price}</span>
 									</var>
 								</div>
 								<dl>
@@ -106,49 +108,17 @@ class ProductsView extends Component {
 										</dl>
 									</div>
 									<div className="col-sm-7">
-										<dl className="dlist-inline">
-											<dt>Size: </dt>
-											<dd>
-												<label className="form-check form-check-inline">
-													<input
-														className="form-check-input"
-														type="radio"
-														name="inlineRadioOptions"
-														id="inlineRadio2"
-														defaultValue="option2"
-													/>
-													<span className="form-check-label">SM</span>
-												</label>
-												<label className="form-check form-check-inline">
-													<input
-														className="form-check-input"
-														type="radio"
-														name="inlineRadioOptions"
-														id="inlineRadio2"
-														defaultValue="option2"
-													/>
-													<span className="form-check-label">MD</span>
-												</label>
-												<label className="form-check form-check-inline">
-													<input
-														className="form-check-input"
-														type="radio"
-														name="inlineRadioOptions"
-														id="inlineRadio2"
-														defaultValue="option2"
-													/>
-													<span className="form-check-label">XXL</span>
-												</label>
-											</dd>
-										</dl>
+										<div className="call">
+											<h2>{quantity} items in store</h2>
+										</div>
 									</div>
 								</div>
 								<hr />
-								<a href="#" className="btn  btn-primary">
+								<a href="#" className="btn  btn-primary mr-2">
 									Buy now
 								</a>
-								<a href="#" className="btn  btn-outline-primary">
-									<i className="fas fa-shopping-cart" /> Add to cart
+								<a href="#" className="btn  btn-outline-primary ml-2">
+									<i className="fa fa-shopping-cart" /> Add to cart
 								</a>
 							</article>
 						</aside>
