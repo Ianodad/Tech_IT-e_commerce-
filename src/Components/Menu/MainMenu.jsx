@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../responsive.css';
-import '../../ui.css';
+import '../StylesCommon/responsive.css';
+import '../StylesCommon/ui.css';
 import { Link } from 'react-router-dom';
-import TopNavbar from 'Top/TopNavbar';
-import HeaderInfo from 'Bottom/HeaderInfo.jsx';
+import TopNavbar from './Top/TopNavbar';
+import HeaderInfo from './Bottom/HeaderInfo';
 
 const MainMenu = () => {
 	return (

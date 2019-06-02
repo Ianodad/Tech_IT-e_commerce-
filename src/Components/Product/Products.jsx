@@ -48,7 +48,7 @@ class Products extends Component {
 
 		return (
 			<div className="container-fluid">
-				{this.props.location.pathname === '/chart' ? (
+				{this.props.location.pathname === '/cart' ? (
 					<ProductsChart chart={chart} onChartAdd={this.handleChartAdd} />
 				) : (
 					<div className="row">
