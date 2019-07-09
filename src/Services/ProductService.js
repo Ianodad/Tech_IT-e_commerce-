@@ -520,7 +520,7 @@ const products = [
     "isAvailable": true,
     "image": "http://placehold.it/250x250",
     "imageLg": "http://placehold.it/1080x1080",
-    "productName": "Lee",
+    "productName": "VEGA 570",
     "price": 30000,
     "company": "AMD",
     "category": "VGA",
