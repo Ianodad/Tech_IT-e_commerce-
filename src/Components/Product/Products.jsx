@@ -40,7 +40,7 @@ class Products extends Component {
 
 		const filteredProducts =
 			selectedCategory && selectedCategory._id
-				? allProducts.filter((p) => p.category === selectedCategory.category)
+				? allProducts.filter((p) => p.category._id === selectedCategory._id)
 				: allProducts;
 		const products = paginate(filteredProducts, currentPage, pageSize);
 

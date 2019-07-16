@@ -14,16 +14,17 @@ function CategoryList(props) {
 				<div className="filter-content">
 					<div className="list-group list-group-flush">
 						{categories.map((category) => (
-							<a
-								href="#"
-								className={category === selectedCategory ? 'list-group-item active' : 'list-group-item'}
+							<div
+								className={
+									category._id === selectedCategory._id ? 'list-group-item active' : 'list-group-item'
+								}
 								onClick={() => onProductSelect(category)}
 							>
 								{category.category}
 								<span className="float-right badge badge-secondary round">
-									{categoryFilter(products, category.category)}
+									{categoryFilter(products, category)}
 								</span>
-							</a>
+							</div>
 						))}
 					</div>
 				</div>
