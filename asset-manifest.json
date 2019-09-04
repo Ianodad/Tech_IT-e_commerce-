@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/TechIT/static/css/main.d8692efb.chunk.css",
-    "main.js": "/TechIT/static/js/main.75e700a3.chunk.js",
-    "main.js.map": "/TechIT/static/js/main.75e700a3.chunk.js.map",
-    "runtime~main.js": "/TechIT/static/js/runtime~main.467a2852.js",
-    "runtime~main.js.map": "/TechIT/static/js/runtime~main.467a2852.js.map",
-    "static/css/2.e871d219.chunk.css": "/TechIT/static/css/2.e871d219.chunk.css",
-    "static/js/2.e5072b41.chunk.js": "/TechIT/static/js/2.e5072b41.chunk.js",
-    "static/js/2.e5072b41.chunk.js.map": "/TechIT/static/js/2.e5072b41.chunk.js.map",
-    "index.html": "/TechIT/index.html",
-    "precache-manifest.e3c6f71f7a5a0804c2f81b8bb5c94df7.js": "/TechIT/precache-manifest.e3c6f71f7a5a0804c2f81b8bb5c94df7.js",
-    "service-worker.js": "/TechIT/service-worker.js",
-    "static/css/2.e871d219.chunk.css.map": "/TechIT/static/css/2.e871d219.chunk.css.map",
-    "static/css/main.d8692efb.chunk.css.map": "/TechIT/static/css/main.d8692efb.chunk.css.map",
-    "static/media/home.css": "/TechIT/static/media/Appliance-repair-san-antonio-65.055dc973.png",
-    "static/media/font-awesome.css": "/TechIT/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/Tech_IT-e_commerce-/static/css/main.e5a974f4.chunk.css",
+    "main.js": "/Tech_IT-e_commerce-/static/js/main.75e700a3.chunk.js",
+    "main.js.map": "/Tech_IT-e_commerce-/static/js/main.75e700a3.chunk.js.map",
+    "runtime~main.js": "/Tech_IT-e_commerce-/static/js/runtime~main.a4cc65a9.js",
+    "runtime~main.js.map": "/Tech_IT-e_commerce-/static/js/runtime~main.a4cc65a9.js.map",
+    "static/css/2.c5730487.chunk.css": "/Tech_IT-e_commerce-/static/css/2.c5730487.chunk.css",
+    "static/js/2.e5072b41.chunk.js": "/Tech_IT-e_commerce-/static/js/2.e5072b41.chunk.js",
+    "static/js/2.e5072b41.chunk.js.map": "/Tech_IT-e_commerce-/static/js/2.e5072b41.chunk.js.map",
+    "index.html": "/Tech_IT-e_commerce-/index.html",
+    "precache-manifest.b2bb7e1016ef85a581b52f18dc79d7e9.js": "/Tech_IT-e_commerce-/precache-manifest.b2bb7e1016ef85a581b52f18dc79d7e9.js",
+    "service-worker.js": "/Tech_IT-e_commerce-/service-worker.js",
+    "static/css/2.c5730487.chunk.css.map": "/Tech_IT-e_commerce-/static/css/2.c5730487.chunk.css.map",
+    "static/css/main.e5a974f4.chunk.css.map": "/Tech_IT-e_commerce-/static/css/main.e5a974f4.chunk.css.map",
+    "static/media/home.css": "/Tech_IT-e_commerce-/static/media/Appliance-repair-san-antonio-65.055dc973.png",
+    "static/media/font-awesome.css": "/Tech_IT-e_commerce-/static/media/fontawesome-webfont.fee66e71.woff"
   }
 }
