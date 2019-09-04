@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a245591c.chunk.css",
-    "main.js": "/static/js/main.75e700a3.chunk.js",
-    "main.js.map": "/static/js/main.75e700a3.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.b7c6c5e7.chunk.css": "/static/css/2.b7c6c5e7.chunk.css",
-    "static/js/2.e5072b41.chunk.js": "/static/js/2.e5072b41.chunk.js",
-    "static/js/2.e5072b41.chunk.js.map": "/static/js/2.e5072b41.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.09dfd5a41a817a94b34a9e451755cbcd.js": "/precache-manifest.09dfd5a41a817a94b34a9e451755cbcd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.b7c6c5e7.chunk.css.map": "/static/css/2.b7c6c5e7.chunk.css.map",
-    "static/css/main.a245591c.chunk.css.map": "/static/css/main.a245591c.chunk.css.map",
-    "static/media/home.css": "/static/media/Appliance-repair-san-antonio-65.055dc973.png",
-    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/Tech_IT-e_commerce-/static/css/main.e5a974f4.chunk.css",
+    "main.js": "/Tech_IT-e_commerce-/static/js/main.75e700a3.chunk.js",
+    "main.js.map": "/Tech_IT-e_commerce-/static/js/main.75e700a3.chunk.js.map",
+    "runtime~main.js": "/Tech_IT-e_commerce-/static/js/runtime~main.a4cc65a9.js",
+    "runtime~main.js.map": "/Tech_IT-e_commerce-/static/js/runtime~main.a4cc65a9.js.map",
+    "static/css/2.c5730487.chunk.css": "/Tech_IT-e_commerce-/static/css/2.c5730487.chunk.css",
+    "static/js/2.e5072b41.chunk.js": "/Tech_IT-e_commerce-/static/js/2.e5072b41.chunk.js",
+    "static/js/2.e5072b41.chunk.js.map": "/Tech_IT-e_commerce-/static/js/2.e5072b41.chunk.js.map",
+    "index.html": "/Tech_IT-e_commerce-/index.html",
+    "precache-manifest.b2bb7e1016ef85a581b52f18dc79d7e9.js": "/Tech_IT-e_commerce-/precache-manifest.b2bb7e1016ef85a581b52f18dc79d7e9.js",
+    "service-worker.js": "/Tech_IT-e_commerce-/service-worker.js",
+    "static/css/2.c5730487.chunk.css.map": "/Tech_IT-e_commerce-/static/css/2.c5730487.chunk.css.map",
+    "static/css/main.e5a974f4.chunk.css.map": "/Tech_IT-e_commerce-/static/css/main.e5a974f4.chunk.css.map",
+    "static/media/home.css": "/Tech_IT-e_commerce-/static/media/Appliance-repair-san-antonio-65.055dc973.png",
+    "static/media/font-awesome.css": "/Tech_IT-e_commerce-/static/media/fontawesome-webfont.fee66e71.woff"
   }
 }
