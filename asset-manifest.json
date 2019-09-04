@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a245591c.chunk.css",
+    "main.js": "/static/js/main.75e700a3.chunk.js",
+    "main.js.map": "/static/js/main.75e700a3.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.b7c6c5e7.chunk.css": "/static/css/2.b7c6c5e7.chunk.css",
+    "static/js/2.e5072b41.chunk.js": "/static/js/2.e5072b41.chunk.js",
+    "static/js/2.e5072b41.chunk.js.map": "/static/js/2.e5072b41.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.09dfd5a41a817a94b34a9e451755cbcd.js": "/precache-manifest.09dfd5a41a817a94b34a9e451755cbcd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b7c6c5e7.chunk.css.map": "/static/css/2.b7c6c5e7.chunk.css.map",
+    "static/css/main.a245591c.chunk.css.map": "/static/css/main.a245591c.chunk.css.map",
+    "static/media/home.css": "/static/media/Appliance-repair-san-antonio-65.055dc973.png",
+    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}
