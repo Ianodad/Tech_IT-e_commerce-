@@ -9,7 +9,7 @@ import UserInfo from './UserInfo';
 const HeaderInfo = () => {
 	return (
 		<div>
-			<section className="header-main">
+			<section className="header-main" >
 				<div className="container-fluid">
 					<div className="row align-items-center">
 						<Logo />

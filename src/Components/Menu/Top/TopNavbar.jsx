@@ -8,8 +8,8 @@ import NavCurrency from './NavCurrency';
 
 const TopNavbar = () => {
 	return (
-		<div>
-			<nav className="navbar navbar-top navbar-expand-lg navbar-dark bg-secondary">
+		<div >
+			<nav className="navbar navbar-top navbar-expand-lg navbar-dark bg-secondary" >
 				<div className="container">
 					<button
 						className="navbar-toggler"
